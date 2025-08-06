@@ -63,7 +63,6 @@ jobs:
   #       run: dotnet test Fast-api.csproj --no-build --verbosity normal
  
   deploy:
-    needs: [test]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
